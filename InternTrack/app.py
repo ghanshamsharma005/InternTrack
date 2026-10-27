@@ -127,6 +127,11 @@ def create_app(config_class=None):
     return app
 
 
+
+# Create the Flask application for Vercel
+app = create_app()
+
+# Run the local development server
 if __name__ == '__main__':
-    app = create_app()
     app.run(debug=True, host='0.0.0.0', port=5000)
+
